@@ -2,6 +2,8 @@ Hello, my name is Moritz »mo.« Sauer and I run [Phlow](http://phlow.de/) and b
 
 ## [Feeling Responsive](http://phlow.github.io/feeling-responsive/)
 
+[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
+
 »Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.
 
 
