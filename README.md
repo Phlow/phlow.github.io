@@ -1,4 +1,4 @@
-Hello, my name is Moritz »mo.« Sauer and I run [Phlow](http://phlow.de/) and build two clean and flexible themes for [Jekyll](jekyllrb.com).
+Hello, my name is Moritz »mo.« Sauer and I run [Phlow](http://phlow.de/) and build two clean and flexible themes for [Jekyll](http://jekyllrb.com).
 
 ## [Feeling Responsive](http://phlow.github.io/feeling-responsive/)
 
