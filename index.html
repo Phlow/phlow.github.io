@@ -5,23 +5,36 @@
     <meta charset="UTF-8"/>
     <meta name="robots" content="follow"/>
     <link rel="shortcut icon" href="https://phlow.de/favicon.ico"/>
-    <meta name="description" content="Impressum von Phlow und allen dazugehörigen Websites"/>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700" rel="stylesheet">
-
-
+    <meta name="description" content="Phlow Projects on GitHub"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+      :root{
+        --orange:#fabb00;
+        --orange-hell:#ffe8a5;
+        --rot:#ab1838;
+        --smaller:clamp(0.7901rem, 0.7337rem + 0.2822vw, 0.9877rem);
+        --small:clamp(0.8889rem, 0.8254rem + 0.3175vw, 1.1111rem);
+        --p:clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+        --h5:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);
+        --h4:clamp(1.2656rem, 1.1752rem + 0.452vw, 1.582rem);
+        --h3:clamp(1.4238rem, 1.3221rem + 0.5085vw, 1.7798rem);
+        --h2:clamp(1.6018rem, 1.4874rem + 0.5721vw, 2.0023rem);
+        --h1:clamp(1.802rem, 1.6733rem + 0.6436vw, 2.2525rem)
+      }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
 body {
   line-height: 1.65em;
-  font-size: 18px;
-  color: #fabb00;
+  font-size: var(--p);
+  color: var(--orange);
   background: #222;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 article {
   max-width: 560px;
   padding: 1em;
   margin: 1em auto 8em auto;
-  font-family: Georgia, sans-serif;
 }
 img {
     width: 100%;
@@ -32,26 +45,28 @@ iframe {
 }
 a {
   text-decoration: none;
-    color: #aa0132;
-    box-shadow: inset 0 -3px 0 #fabb00;
-    -webkit-transition: box-shadow 0.4s cubic-bezier(0.33, 0.66, 0.66, 1);
-    transition: box-shadow 0.4s cubic-bezier(0.33, 0.66, 0.66, 1);
+  color: var(--rot);
+  box-shadow: inset 0 -2px 0 var(--rot);
+  -webkit-transition: box-shadow 0.4s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: box-shadow 0.4s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 a:hover {
-    box-shadow: inset 0 -7px 0 #fabb00;
+  color: var(--orange);
+  box-shadow: inset 0 -4px 0 var(--orange);
 }
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+
 h1 a, h2 a, h3 a {
   box-shadow: inset 0 0 0 #fabb00;
 }
 h1, h2, h3, h4 {
-  font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial sans-serif;
-  font-weight: 700;
-  margin-top: 1.65em;
-  margin-bottom: 1em;
+  font-weight: 500;
+  margin: 1.65rem 0 1rem 0;
 }
-pre, code {
-  font-family: Lucida Console, Monaco, monospace;
-}
+pre, code { font-family: Lucida Console, Monaco, monospace; }
 nav {
     position: fixed;
     top: 0;
@@ -123,63 +138,49 @@ nav:after {
 }
 
     </style>
-  </head>
-  <body>
-
+</head>
+<body>
 <nav>
-          <ul class="menu">
-            <li>
-                <a class="logo" href="/" title="Phlow Assets">
-                  <svg id="phlow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="30" viewbox="0 0 293.75 106.945">
-                    <defs>
-                      <path id="SVGID_1_" d="M8.217 4.48h279.285v86.318H8.217z"></path>
-                    </defs>
-                    <clippath id="SVGID_2_">
-                      <use xlink:href="#SVGID_1_" overflow="visible"></use>
-                    </clippath>
-                    <path
-                      clip-path="url(#SVGID_2_)"
-                      d="M57.536 24.235c6.72 0 11.53 1.905 11.53 6.314 0 7.822-12.732 21.256-25.564 21.256.7-4.217 9.622-22.863 11.63-27.475.803-.096 1.6-.096 2.404-.096m-29.47 17.143c-6.018 14.335-12.13 29.873-12.13 36.89 0 8.02 7.818 12.53 14.336 12.53 1.6-12.33 7.017-23.058 10.82-32.78 1.305 4.912 2.613 8.82 8.228 8.82 18.244 0 38.995-19.342 38.995-36.484 0-18.446-21.558-22.758-35.79-22.758-21.35 0-44.308 10.325-44.308 25.87 0 3.804 1.3 7.92 4.413 12.23.996-7.322 13.527-14.437 26.565-18.346-5.014 3.695-9.025 9.01-11.13 14.027m92.528-27.468c.7 0 1.102.695 1.102 2.405 0 3.307-3.007 9.82-12.43 14.936 3.01-7.316 7.52-17.34 11.328-17.34M105.555 40.97c14.937-3.308 28.568-16.74 28.568-27.27 0-5.513-4.61-9.223-13.937-9.223-18.04 0-20.05 15.24-24.96 27.57l-1.906 4.71c-2.503.5-8.42 1.175-11.32 1.476 2.002 1.297 7.408 1.934 9.72 2.534-7.022 17.042-14.543 34.785-14.543 38.694 0 6.916 5.517 9.626 12.136 9.626 5.51-21.66 19.748-40.606 27.667-40.606-3.503 6.32-11.426 20.852-11.426 30.78 0 5.31 1.3 10.927 9.727 10.927 9.827 0 21.085-12.83 22.39-21.253-2.11 1.705-9.763 4.908-12.766 4.908-1.297 0-2.2-.696-2.2-2.406 0-7.818 12.228-20.35 12.228-28.47 0-5.816-4.01-7.92-9.023-7.92-7.018 0-21.05 11.327-24.26 16.642 1.404-4.007 2.606-7.513 3.907-10.722m29.673 35.19c0 7.517 4.908 14.533 12.327 14.533 1.41 0 5.99.315 11.07-1.713-5.08-3.05-8.563-5.905-8.563-10.52 0-21.354 23.96-53.732 23.96-62.655 0-5.308-7.625-8.92-12.737-8.92-.7 0-1.405.1-2.007.203.203.398.3 1.004.3 1.605.007 11.03-24.35 52.027-24.35 67.466m57.244-23.86c0 8.52-8.825 22.656-15.14 22.656-2.31 0-3.307-1.605-3.307-3.91 0-5.313 5.507-14.436 13.433-16.747-3.21-3.308-6.622-4.707-10.03-4.707h-.602c2.91-2.405 6.42-3.71 9.325-3.71 3.507 0 6.32 2.004 6.32 6.417m-33.487 22.454c0 8.126 7.622 14.342 15.14 14.342 19.648 0 34.088-23.56 34.088-40.7 0-11.234-6.818-15.843-15.237-15.843-13.136 0-29.88 11.23-29.88 25.968v.904c-2.502 4.306-4.11 9.618-4.11 15.33m78.39-1.597c0 10.52 5.115 15.64 11.13 15.64 15.84 0 38.995-43.313 38.995-64.666 0-7.316-3.81-10.925-9.123-10.925-3.203 0-6.813 1.203-10.627 3.71 2.71 3.41 3.71 8.014 3.71 13.132 0 16.937-11.728 39.495-17.544 39.495-.603 0-.903-.6-.903-1.807 1.502-9.818 7.115-19.85 7.115-27.065 0-5.11-7.717-8.122-11.828-8.122-2.406 8.618-11.326 35.99-20.846 35.99-.512 0-.707-.7-.707-2.205 0-5.313 5.913-19.746 5.913-25.06 0-6.82-7.715-8.924-12.83-9.025-2.31 16.038-10.127 34.086-10.127 43.708 0 7.02 4.92 12.835 10.828 12.835 6.22.005 12.132-8.42 16.84-15.63"></path>
-                  </svg>
-                </a>
-
-            </li>
-            <li>
-              <a href="https://phlow.de/info/">Info</a>
-            </li>
-            <li>
-              <a href="https://phlow.de/kontakt/">Kontakt</a>
-            </li>
-            <li><a href="https://phlow.de/seminare/">Seminare</a></li>
-          </ul>
-        </nav>
-
-
+  <ul class="menu">
+    <li>
+      <a class="logo" href="/" title="Phlow Assets">
+        <svg id="phlow" width="100" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" version="1.1" viewBox="0 0 229 52" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m209.04 0-23.63 51.07h19.49l23.64-51.07h-19.5z"/><g><path d="m76.42 44.22h-4l3.11-15.52c0.18-0.92 0.33-1.78 0.45-2.59 0.12-0.8 0.17-1.6 0.17-2.38 0-3.03-0.75-5.38-2.24-7.04-1.5-1.66-3.69-2.48-6.59-2.48s-5.07 0.76-6.93 2.28-3.46 3.7-4.79 6.55h-0.35l4.55-23.04h-8.35l-10.21 51.05h8.35l3.79-18.97c0.28-1.42 0.75-2.78 1.42-4.07s1.46-2.46 2.38-3.52c0.83-0.97 1.75-1.74 2.76-2.31 1.01-0.58 2.12-0.86 3.31-0.86 1.52 0 2.6 0.38 3.24 1.14s0.97 1.81 0.97 3.14c0 1.24-0.14 2.51-0.41 3.79l-2.97 14.83c-0.14 0.65-0.21 1.29-0.21 1.93 0 1.56 0.48 2.77 1.45 3.62s2.28 1.28 3.93 1.28h5.79l1.38-6.83zm14.63 0 8.83-44.22h-8.35l-8.83 44.22c-0.09 0.41-0.15 0.72-0.17 0.93s-0.03 0.45-0.03 0.72c0 1.56 0.52 2.82 1.55 3.76 1.04 0.94 2.45 1.41 4.24 1.41h6.07l1.31-6.83h-4.62v0.01zm34.56-16.59c0 0.5-0.02 0.93-0.07 1.27s-0.11 0.74-0.21 1.2l-1.24 5.97c-0.55 2.88-1.55 5.08-3 6.58-1.45 1.51-3.21 2.26-5.28 2.26s-3.55-0.59-4.59-1.78c-1.03-1.19-1.55-2.74-1.55-4.67 0-0.5 0.02-0.94 0.07-1.3 0.04-0.36 0.11-0.73 0.21-1.1l1.24-6.04c0.55-2.88 1.55-5.08 3-6.58 1.45-1.51 3.21-2.26 5.28-2.26s3.55 0.59 4.59 1.78 1.55 2.74 1.55 4.66m6.9 10.46c0.92-2.76 1.38-5.73 1.38-8.9 0-4.83-1.27-8.53-3.79-11.11-2.53-2.58-5.91-3.86-10.14-3.86-2.71 0-5.2 0.59-7.45 1.76s-4.21 2.78-5.86 4.83c-1.66 2.05-2.94 4.45-3.86 7.21s-1.38 5.73-1.38 8.9c0 4.83 1.26 8.53 3.79 11.11s5.91 3.86 10.14 3.86c2.67 0 5.14-0.59 7.42-1.76s4.24-2.78 5.9-4.83c1.65-2.05 2.94-4.45 3.86-7.21m62.69-32.91c0-1.56-0.52-2.82-1.55-3.76-1.04-0.94-2.46-1.41-4.25-1.41h-6.07l-1.31 6.83 4.52 0.04-15.13 35.28h-0.41l-0.76-12.62-1.1-14.49h-7.87l-7.38 16.01-4.76 10.9h-0.41l-0.28-12.56-0.48-14.35h-8.28l2.48 36.01h9.24l7.18-15.32 4.49-10h0.35l0.83 11.11 1.24 14.21h9.21s20.09-43.55 20.3-44.22c0.14-0.44 0.15-0.72 0.17-0.93s0.04-0.45 0.04-0.72"/><path d="m17.38 7.73h10.83c1.79 0 3.09 0.4 3.9 1.21 0.8 0.81 1.21 1.81 1.21 3 0 0.41-0.08 0.97-0.24 1.66s-0.36 1.63-0.59 2.83c-0.37 1.89-1.18 3.29-2.45 4.21s-2.77 1.38-4.52 1.38h-11.04l2.9-14.28v-0.01zm-8.69 43.31 4.27-21.3h11.38c2.67 0 5.09-0.42 7.28-1.28 2.18-0.85 4.07-2.03 5.66-3.55s2.82-3.33 3.69-5.45 1.31-4.44 1.31-6.97c0-3.86-1.21-6.91-3.62-9.14-2.42-2.23-5.94-3.35-10.59-3.35h-17.86l-10.21 51.04h8.69z"/></g></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://phlow.de/info/">Info</a> / 
+    </li>
+    <li>
+      <a href="https://phlow.de/kontakt/">Kontakt</a> / 
+    </li>
+    <li><a href="https://phlow.de/seminare/">Seminare</a></li>
+  </ul>
+</nav>
 
 <article>
-
   <h1>Phlow Projects on GitHub</h1>
+
   <h2><a href="http://phlow.github.io/feeling-responsive/">Jekyll Theme: Feeling Responsive</a></h2>
   <div class="flex-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe></div>
-  <p>»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.</p>
+  <p>
+  »Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.
+</p>
 
   <h2><a href="http://phlow.github.io/simplicity/">Jekyll Theme: Simplicity</a></h2>
-  <p><a style=" box-shadow: inset 0 0 0 #fabb00;" href="http://phlow.github.io/simplicity/"><img src="https://camo.githubusercontent.com/58f914682211d4e82f617f7f3cdf112ce417467a/68747470733a2f2f70686c6f772e6769746875622e696f2f7374617469632f73637265656e73686f745f73696d706c69636974795f7468656d652e6a7067" alt=""></a></p>
-  <p>A flexible, superfast and easily customizable Jekyll Theme with no Javascript but beautiful typography.</p>
-
-
-
-  <h2><a href="http://netlabels.org">Netlabels.org: Netlabel & Netaudio Resource</a></h2>
-  <p>Netlabels.org is your resource for netlabel and netaudio culture. Find free music in our archive and find out more about netlabel history</p>
-
-  <h2><a href="https://phlow-magazine.com/">Phlow-Magazine.com – Creative Commons Music Reviews</a></h2>
   <p>
+    A flexible, superfast and easily customizable Jekyll Theme with no Javascript but beautiful typography.
+  </p>
 
-    <a name="history" href="http://phlow-magazine.com">Phlow-Magazine.com</a> is a magazine about free 
-    mp3 music culture. Phlow-Magazine.com offers you free music to download from netlabels and musicians 
-    all over the globe. Check out
-    <a href="https://phlow-magazine.com/free-mp3-music-download/">the mp3-archive with free music</a>.
-      </p>
+  <h2><a href="http://netlabels.org">Netlabel & Netaudio Resource</a></h2>
+  <p>
+    <a href="http://netlabels.org">Netlabels.org</a> is your resource for netlabel and netaudio culture. Find free music in our archive and find out more about netlabel history
+  </p>
+
+  <h2><a href="https://phlow-magazine.com/">Creative Commons Music Reviews</a></h2>
+  <p>
+    <a href="http://phlow-magazine.com">Phlow-Magazine.com</a> is a magazine about free 
+    mp3 music culture. Phlow-Magazine.com offers you free music to download from netlabels and musicians all over the globe. Check out <a href="https://phlow-magazine.com/free-mp3-music-download/">the mp3-archive with free music</a>.
+  </p>
 </article>
 
 
@@ -191,7 +192,8 @@ nav:after {
       <path d="M400 177c-127 0-223 103-223 223 0 104 72 188 160 214v-41c0-33 17-46 17-46-73-8-116-43-116-126 0-45 27-69 27-69s-14-26 2-67c25-6 71 26 71 26s24-9 63-9 63 9 63 9 46-32 71-26c16 41 2 67 2 67s27 24 27 69c0 83-43 118-116 126 0 0 17 13 17 46v41c87-27 158-109 158-214 0-120-96-223-223-223zm0-42c146 0 265 119 265 265S546 665 400 665 135 546 135 400s119-265 265-265z"></path></svg>
     </a>
   </li>
-    <a href="https://www.youtube.com/user/PhlowMedia" target="_blank" title=" Youtube">
+  <li>
+    <a href="https://www.youtube.com/user/PhlowMedia" target="_blank" title="Youtube">
       <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
       <path d="M400 224c144 0 201 2 224 25 17 17 26 52.125 26 151s-9 134-26 151c-23 23-80 25-224 25s-201-2-224-25c-17-17-26-52.125-26-151s9-134 26-151c23-23 80-25 224-25zm-52 100v141l135-70z"></path></svg>
   </a>
